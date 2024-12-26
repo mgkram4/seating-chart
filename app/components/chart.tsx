@@ -115,7 +115,7 @@ const SeatingChart: React.FC<SeatingChartProps> = ({ initialData, onSeatUpdate }
     <div
       onClick={onClick}
       className={`w-6 h-6 border-2 rounded-lg m-0.5 flex items-center justify-center cursor-pointer text-xs
-        ${occupied ? 'bg-blue-500 text-white' : 'bg-gray-100'}
+        ${occupied ? 'bg-blue-500 text-white' : number >= 44 && number <= 73 ? 'bg-green-500' : 'bg-gray-100'}
         ${selected ? 'border-red-500' : 'border-gray-300'}
         hover:border-blue-500 transition-colors relative`}
     >
